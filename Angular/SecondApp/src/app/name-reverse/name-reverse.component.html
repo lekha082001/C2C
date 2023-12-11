@@ -1,0 +1,32 @@
+<h3 class="jumbotron">List of people in the forum</h3>
+<hr/>
+<ul class="table table-hover" *ngFor="let p of personList">
+    <li>{{p.name}} - {{p.aadhar}}</li>
+</ul>
+
+<input type="text" [(ngModel)]="valuetoreverse"/>
+<div *ngFor="let p of personList | reverse : valuetoreverse">
+    <div class="card flost-start mx-3" style="width: 18rem;">
+        <img src="https://picsum.photos/536/354"/>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        <p>
+            Name: {{p.name}}
+        </p>
+        <p>
+            Aadhar: {{p.aadhar}}
+        </p>
+
+    </div>
+</div>
+
+
+
+
+

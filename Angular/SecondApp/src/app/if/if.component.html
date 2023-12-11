@@ -1,0 +1,15 @@
+<h3>Working with ng-if</h3>
+<input type="checkbox" [checked]="isActive"/>
+<div *ngIf="isActive; else uncheckedTemplate" class="bg-success">
+    Checkbox status = checked!
+</div>
+
+<ng-template #uncheckedTemplate>
+    <span class="bg-danger">Checkbox status = unchecked!</span>
+</ng-template>
+
+<!-- Applying validation error message using ng-if -->
+<div>
+    Name: <input type = "text" [(ngModel)]="aname"/>
+    <span class="text-danger" *ngIf="aname == ''">Name is required</span>
+</div>

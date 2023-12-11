@@ -1,0 +1,35 @@
+.title{
+background-color: brown;
+color: lightcyan;
+padding: 28px;
+border-radius: 8px;
+box-shadow: 5px 5px 5px 5px sandybrown;
+font-size: xxx-large;
+font-family: cursive;
+}
+
+
+.pills{
+    background-color: coral;
+    color: lightcyan;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px 2px sandybrown;
+    font-size: x-large;
+    font-family: math;
+}
+
+.bckg{
+    background-color: wheat;
+}
+
+div{
+    margin-top: 14px;
+    margin-left: 250px;
+}
+
+circle{
+    fill: coral;
+    stroke: crimson;
+    opacity: 0.8;
+}

@@ -1,0 +1,16 @@
+.ng-pristine .no-touched{
+    background-color:  cyan;
+}
+
+.ng-dirty .ng-touched{
+    backgrounf-color: rosybrown;
+}
+
+.ng-valid{
+color:green;
+}
+
+.ng-invalid{
+    border-width: 2px;
+    border-color: maroon;
+}

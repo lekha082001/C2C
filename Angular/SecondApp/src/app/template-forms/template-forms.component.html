@@ -1,0 +1,15 @@
+<h3>Working with template driven forms</h3>
+<form #f="ngForm">
+    <input type="text" #namebox="ngModel"[(ngModel)]="fname" name="forFormNameBox" required/>
+    <input type="text" #pwdbox="ngModel"[(ngModel)]="pwd" name="forFormpwdBox" required/>
+    <pre>
+        What my form has grouped:            {{f.value | json}}
+    </pre>
+    <pre>Access value of forFormNameBox:     {{f.value.forFormNameBox}}</pre>
+    <pre>State of forFormNameBox:            {{namebox.valid}}</pre>
+    <pre>Pristine: {{namebox.pristine}}
+         Untouched: {{namebox.untouched}}
+         Touched: {{namebox.touched}}
+         Dirty: {{namebox.dirty}}
+    </pre>
+</form>
